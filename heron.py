@@ -1,3 +1,5 @@
+import math
+
 def inputs():
     antaliterations = int(input("Hur många gånger vill du iterata?:"))
     talattrakna = int(input("Vilket tal vill du räkna?:"))
@@ -17,7 +19,7 @@ def heronsmetod(antaliterations, talattrakna, gissning):
         if abs(nygissning - senastegissning) == 0 or counter == antaliterations:
             resultat = True
     print("Bästa gissning av kvadratrot är " + str(nygissning) + " och använder " + str(counter) + " iterationer")
-
+    print("sqrt() funktionen säger: " + str(math.sqrt(talattrakna)))
 
 if __name__ == '__main__':
     inputs()
